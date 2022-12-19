@@ -15,7 +15,7 @@
   <link rel="stylesheet" href="/css/init.css">
   <style>
     .page {
-      height: 100%;
+      height: 100vh;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -61,6 +61,10 @@
     }
 
     @media screen and (max-width:500px) {
+      .page {
+        height: -webkit-fill-available;
+      }
+
       .center>h1 {
         font-size: 6vw;
       }
