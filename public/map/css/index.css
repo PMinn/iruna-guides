@@ -4,15 +4,25 @@ body {
     margin: 0;
 }
 
+html {
+    height: -webkit-fill-available;
+}
+
 body {
     background-color: #f9f4ef;
 }
 
 .container {
-    margin: 2vh auto 6vh auto;
+    margin-left: auto;
+    margin-right: auto;
     width: 90vw;
     max-width: 600px;
     z-index: 0;
+}
+
+.controller {
+    padding-top: 2vh;
+    margin-bottom: 6vh;
 }
 
 table {
@@ -72,6 +82,11 @@ tr>td:last-child {
     position: relative;
 }
 
+.center {
+    display: flex;
+    justify-content: center;
+}
+
 #send {
     margin-top: 1vh;
     width: calc(100% - 1rem);
@@ -116,7 +131,7 @@ tr>td:last-child {
 
 .fixed-page-out {
     width: 100vw;
-    height: 100vh;
+    height: 100%;
     position: fixed;
     top: 0;
     left: 0;
@@ -130,7 +145,7 @@ tr>td:last-child {
 .fixed-page {
     width: 80vw;
     max-width: 400px;
-    height: 100vh;
+    height: 100%;
     background-color: #fffffe;
     position: absolute;
     right: 0;
@@ -148,6 +163,8 @@ tr>td:last-child {
 .search-bar {
     width: 80%;
     margin: 3vh 10%;
+    display: flex;
+    justify-content: space-between;
 }
 
 #chose_point_page input[type="search"] {
@@ -195,6 +212,10 @@ tr>td:last-child {
 
 #point_list .btn.hidden {
     display: none;
+}
+
+#point_list>*:last-child {
+    margin-bottom: 10vh;
 }
 
 #switch_btn {
