@@ -1,3 +1,7 @@
+body {
+    padding-bottom: 5vh;
+}
+
 .controller {
     padding-top: 2vh;
     margin-bottom: 6vh;
@@ -77,6 +81,10 @@ tr>td:last-child {
     color: #020826;
     font-weight: 900;
     letter-spacing: 0.2rem;
+}
+
+.point:last-child {
+    margin-bottom: 5vh;
 }
 
 .point::before {
